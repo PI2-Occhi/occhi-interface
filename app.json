@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "ochhi-interface",
+    "slug": "ochhi-interface",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
