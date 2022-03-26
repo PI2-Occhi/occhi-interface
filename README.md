@@ -1,2 +1,2 @@
-# occhi-interface
-Repositório destinado para a criação do aplicativo Occhi na disciplina de PI2
+Occhi Mobile
+Repositório destinado para a criação do aplicativo Occhi na disciplina de PI2.
