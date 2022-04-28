@@ -33,9 +33,7 @@ export const Title = styled.Text`
 
 export const BluetoothContainer = styled.View`
     align-items: center;
-    height: 300px;
-    justify-content: center;
-    margin: 10px;
+    height: 100%;
 `;
 
 export const Message = styled.Text`
@@ -43,18 +41,13 @@ export const Message = styled.Text`
     font-size: ${RFValue(26)}px;
     text-align: center;
     font-weight: bold;
-`;
-
-export const BluetoothDevicesContainer = styled.View`
-    height: 500px;
+    margin-bottom: ${RFValue(20)}px;
 `;
 
 export const IconContainer = styled.View`
     align-items: center;
 `;
 
-export const BluetoothIcon = styled(Feather)`
-    font-size: ${RFValue(50)}px;
-    color: ${({ theme }) => theme.colors.primary};
-    top: ${RFValue(40)}px;
+export const Fields = styled.View`
+    margin-top: ${RFValue(40)}px;
 `;

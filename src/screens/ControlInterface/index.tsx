@@ -16,14 +16,37 @@ import {
     Slice3,
     Slice4,
     Hole,
-    ArrowUp,
-    ArrowDown,
-    ArrowLeft,
-    ArrowRight,
     ArrowIcon
 } from "./styles";
 
+import { Forward } from "../../components/Forward";
+import { Left } from "../../components/Left";
+import { Right } from "../../components/Right";
+import { Backward } from "../../components/Backward";
+
 export function ControlInterface() {
+    // useState
+    
+    function handleMoveChairToForward() {
+        console.log("Mover para frente");
+        // TODO: implements the function to move the chair to forward
+    }
+
+    function handleMoveChairToLeft() {
+        console.log("Mover para a esquerda");
+        // TODO: implements the function to move the chair to left
+    }
+
+    function handleMoveChairToRight() {
+        console.log("Mover para a direita");
+        // TODO: implements the function to move the chair to right
+    }
+
+    function handleMoveChairToBackward() {
+        console.log("Mover para trás");
+        // TODO: implements the function to move the chair to backward
+    }
+
     return (
         <Container>
             <Header>
@@ -40,10 +63,10 @@ export function ControlInterface() {
                         <Slices>
                             <Hole>
                             </Hole>
-                            <ArrowUp><ArrowIcon name="ios-chevron-up-sharp"></ArrowIcon></ArrowUp>
-                            <ArrowLeft><ArrowIcon name="ios-chevron-back-sharp"></ArrowIcon></ArrowLeft>
-                            <ArrowRight><ArrowIcon name="ios-chevron-forward-sharp"></ArrowIcon></ArrowRight>
-                            <ArrowDown><ArrowIcon name="ios-chevron-down-sharp"></ArrowIcon></ArrowDown>
+                            <Forward iconName="ios-chevron-up-sharp" onPress={handleMoveChairToForward}/>
+                            <Left iconName="ios-chevron-back-sharp" onPress={handleMoveChairToLeft}/>
+                            <Right iconName="ios-chevron-forward-sharp" onPress={handleMoveChairToRight}/>
+                            <Backward iconName="ios-chevron-down-sharp" onPress={handleMoveChairToBackward}/>
                             <Slice1></Slice1>
                             <Slice2></Slice2>
                             <Slice3></Slice3>
