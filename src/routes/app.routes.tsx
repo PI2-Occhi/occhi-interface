@@ -15,16 +15,30 @@ export function AppRoutes() {
     const theme = useTheme();
     return(
         <Navigator
-            screenOptions={{
-                headerShown: false,
-                tabBarActiveTintColor: theme.colors.primary,
-                tabBarInactiveTintColor: theme.colors.secondary_light,
-                tabBarStyle: {
-                    height: 60,
+        screenOptions={{
+            headerShown: false,
+            tabBarActiveTintColor: theme.colors.primary,
+            tabBarInactiveTintColor: theme.colors.secondary_light,
+            tabBarStyle: {
+                    height: 90,
                     paddingVertical: Platform.OS === 'ios' ? 20 : 0,
                 }
             }}
-        >
+            >
+
+            <Screen
+                name="Conexão"
+                component={BluetoothConnection}
+                options={{
+                    tabBarIcon: (({ size, color }) => 
+                        <Feather 
+                            name="bluetooth"
+                            size={size}
+                            color={color}
+                        />
+                    )
+                }}
+            />
             <Screen
                 name="Controle"
                 component={ControlInterface}
@@ -60,20 +74,6 @@ export function AppRoutes() {
                     tabBarIcon: (({ size, color }) => 
                         <FontAwesome 
                             name="question-circle"
-                            size={size}
-                            color={color}
-                        />
-                    )
-                }}
-            />
-
-            <Screen
-                name="Conexão"
-                component={BluetoothConnection}
-                options={{
-                    tabBarIcon: (({ size, color }) => 
-                        <Feather 
-                            name="bluetooth"
                             size={size}
                             color={color}
                         />

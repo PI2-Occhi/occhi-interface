@@ -12,6 +12,7 @@ import {
     Arrow,
     ArrowIcon,
     Text,
+    RotateStopIcons,
 } from "./styles";
 
 export function Tutorial() {
@@ -41,6 +42,14 @@ export function Tutorial() {
                 <ForwardArrowContainer>
                     <Arrow><ArrowIcon name="ios-chevron-down-sharp"/></Arrow>
                     <Text>Movimenta a cadeira para trás</Text>
+                </ForwardArrowContainer>
+                <ForwardArrowContainer>
+                    <Arrow><RotateStopIcons name="rotate-cw"/></Arrow>
+                    <Text>Movimenta a cadeira em 180 graus</Text>
+                </ForwardArrowContainer>
+                <ForwardArrowContainer>
+                    <Arrow><RotateStopIcons name="pause"/></Arrow>
+                    <Text>Parar a cadeira</Text>
                 </ForwardArrowContainer>
             </TutorialContainer>
         </Container>

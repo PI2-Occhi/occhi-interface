@@ -58,7 +58,7 @@ export const TutorialContainer = styled.View`
 `;
 
 export const ForwardArrowContainer = styled.View`
-    height: ${RFValue(100)}px;
+    height: ${RFValue(80)}px;
     width: 100%;
     flex-direction: row;
     align-items: center;
@@ -77,6 +77,13 @@ export const Arrow = styled.View`
 
 export const ArrowIcon = styled(Ionicons)`
     font-size: ${RFValue(50)}px;
+    color: ${({ theme }) => theme.colors.primary};
+    align-self: center;;
+`;
+
+export const RotateStopIcons = styled(Feather)`
+    font-size: ${RFValue(35)}px;
+    margin-top: 10px;
     color: ${({ theme }) => theme.colors.primary};
     align-self: center;;
 `;

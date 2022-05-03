@@ -16,13 +16,15 @@ import {
     Slice3,
     Slice4,
     Hole,
-    ArrowIcon
+    ButtonsContainer,
 } from "./styles";
 
 import { Forward } from "../../components/Forward";
 import { Left } from "../../components/Left";
 import { Right } from "../../components/Right";
 import { Backward } from "../../components/Backward";
+import { StopButton } from "../../components/StopButton";
+import { RotateButton } from "../../components/RotateButton";
 
 export function ControlInterface() {
     // useState
@@ -44,6 +46,16 @@ export function ControlInterface() {
 
     function handleMoveChairToBackward() {
         console.log("Mover para trás");
+        // TODO: implements the function to move the chair to backward
+    }
+
+    function handleStopChair() {
+        console.log("Parar a cadeira");
+        // TODO: implements the function to move the chair to backward
+    }
+
+    function handleRotate180Degrees() {
+        console.log("Girar a cadeira 180 graus");
         // TODO: implements the function to move the chair to backward
     }
 
@@ -75,6 +87,10 @@ export function ControlInterface() {
                     </Circle>
                 </CircleContainer>
             </Control>
+            <ButtonsContainer>
+                <StopButton iconName="pause" onPress={handleStopChair}/>
+                <RotateButton iconName="rotate-cw" onPress={handleRotate180Degrees}/>
+            </ButtonsContainer>
         </Container>
     );
 }

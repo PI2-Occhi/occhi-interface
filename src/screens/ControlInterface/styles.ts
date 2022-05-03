@@ -53,7 +53,7 @@ export const WarningIcon = styled(Feather)`
 
 export const Control = styled.View`
     flex: 1;
-    background-color: ${({ theme }) => theme.colors.background};
+    background-color: red;
     justify-content: center;
 `;
 
@@ -128,54 +128,10 @@ export const Hole = styled.View`
     margin: auto;
 `;
 
-export const ArrowUp = styled.View`
-    font-size: ${RFValue(45)}px;
-    background-color: ${({ theme }) => theme.colors.secondary};
-    width: 80px;
-    height: 80px;
-    z-index: 3;
-    top: ${RFValue(50)}px;
-    border-radius: 18px;
-`;
-
-export const ArrowDown = styled.View`
-    font-size: ${RFValue(45)}px;
-    background-color: ${({ theme }) => theme.colors.secondary};
-    width: 80px;
-    height: 80px;
-    z-index: 3;
-    top: ${RFValue(-20)}px;
-    border-radius: 18px;
-`;
-
-export const ArrowLeft = styled.View`
-    font-size: ${RFValue(45)}px;
-    background-color: ${({ theme }) => theme.colors.secondary};
-    width: 80px;
-    height: 80px;
-    z-index: 3;
-    top: ${RFValue(50)}px;
-    right: ${RFValue(70)}px;
-    color: #fff;
-    border-radius: 18px;
-`;
-
-export const ArrowRight = styled.View`
-    font-size: ${RFValue(45)}px;
-    background-color: ${({ theme }) => theme.colors.secondary};
-    width: 80px;
-    height: 80px;
-    z-index: 3;
-    top: ${RFValue(-20)}px;
-    left: ${RFValue(70)}px;
-    border-radius: 18px;
-`;
-
-export const ArrowIcon = styled(Ionicons)`
-    font-size: ${RFValue(65)}px;
-    align-self: center;
-    color: ${({ theme }) => theme.colors.primary};
+export const ButtonsContainer = styled.View`
+    height: ${RFValue(150)}px;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    top: ${RFValue(2)}px;
+    padding: 40px;
 `;
