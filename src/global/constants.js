@@ -1,11 +1,11 @@
-export const SENSORS_SERVICE = {
+export const CONTROL_SERVICE = {
   SERVICE_UUID: '36752d4f-07d2-4b8c-b533-6dbc8f5cae92',
   CHARACTERISTICS: [
     { UUID: 'ef00490b-5c12-44be-bc6b-546850faaa0a', NAME: 'COMMAND' },
   ],
 };
 
-export const CONTROL_SERVICE = {
+export const SENSORS_SERVICE = {
   SERVICE_UUID: '4079e396-1c21-46fc-bd36-dc1886766b29',
   CHARACTERISTICS: [
     { UUID: 'ac9c9ebf-3b91-4b4b-8c91-355d4d712eab', NAME: 'POWER' },
