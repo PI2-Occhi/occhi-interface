@@ -1,6 +1,0 @@
-module Pods_ochhiinterface {
-  umbrella header "Pods-ochhiinterface-umbrella.h"
-
-  export *
-  module * { export * }
-}
