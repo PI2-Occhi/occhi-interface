@@ -1,7 +1,6 @@
 import styled from "styled-components/native";
-import { RFValue, RFPercentage } from "react-native-responsive-fontsize";
-import { Feather } from '@expo/vector-icons';
-
+import { RFValue } from "react-native-responsive-fontsize";
+import Feather from 'react-native-vector-icons/Feather';
 
 export const Container = styled.View`
     flex-direction: row;

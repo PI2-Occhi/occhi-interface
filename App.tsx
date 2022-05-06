@@ -3,7 +3,9 @@ import { ThemeProvider } from 'styled-components';
 import theme from './src/global/styles/theme';
 import { NavigationContainer } from '@react-navigation/native'
 import { AppRoutes } from './src/routes/app.routes'
-
+import { LogBox } from 'react-native';
+LogBox.ignoreLogs(['Warning: ...']); // Ignore log notification by message
+LogBox.ignoreAllLogs();//Ignore all log notifications
 export default function App() {
   return (
     <ThemeProvider theme={theme}>

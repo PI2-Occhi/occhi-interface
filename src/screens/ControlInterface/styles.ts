@@ -1,7 +1,8 @@
 import styled from "styled-components/native";
 import { RFValue } from "react-native-responsive-fontsize";
-import { Feather, MaterialIcons, Ionicons } from '@expo/vector-icons';
+import Feather from 'react-native-vector-icons/Feather';
 import { getStatusBarHeight } from 'react-native-iphone-x-helper';
+import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 
 export const Container = styled.View`
     flex: 1;
